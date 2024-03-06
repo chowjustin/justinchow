@@ -36,7 +36,7 @@ const Education = () => {
           grade="GPA: 3.88"
           logo="/images/itslogo.png"
           list1="Schematics NPC Senior 2023 Finalist"
-          list2="Schematics NPC Junior 2023 Staff Intern"
+          list2="Schematics ITS IT Dev Staff"
           list3="GDSC ITS Member"
           link="https://www.its.ac.id/"
         />
