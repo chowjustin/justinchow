@@ -31,10 +31,10 @@ const Header = ({}) => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
+    <div className="fixed top-0 left-0 right-0 z-50 overflow-x-hidden">
       <div className="bg-black bg-opacity-85 px-5 py-2 md:px-7 md:py-3 xl:p-5 ">
-        <div className="flex items-center justify-between max-w-[1320px] lg:w-10/12 lg:m-auto">
-          <Link href="#">
+        <div className="flex items-center justify-between max-md:max-w-screen max-w-[1320px] lg:w-10/12 lg:m-auto">
+          <button onClick={() => handleClick("home")}>
             <div className="flex items-center gap-2">
               <Image
                 src="/images/jclogo.jpg"
@@ -46,8 +46,9 @@ const Header = ({}) => {
                 JUSTINCHOW
               </h1>
             </div>
-          </Link>
-          <div className="relative md:hidden">
+          </button>
+
+          <div className="relative  md:hidden">
             <button onClick={handleButtonClick} className="text-white text-3xl">
               <IoMenu />
             </button>

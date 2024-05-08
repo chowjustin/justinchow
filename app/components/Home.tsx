@@ -40,12 +40,12 @@ const HomeLayout = ({}) => {
       data-aos-duration="1000"
       id="home"
     >
-      <div className="m-auto p-24 text-center justify-center">
-        <h1 className="text-white text-6xl md:text-[60px] font-bold  hover:tracking-[0.1em] duration-500">
+      <div className="m-auto max-md:px-4 p-24 text-center justify-center">
+        <h1 className="text-white text-6xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500">
           Hello, welcome <br className="md:hidden" />
           to my
         </h1>
-        <h1 className="text-[#FFBD39] text-6xl md:text-[60px] font-bold  hover:tracking-[0.1em] duration-500">
+        <h1 className="text-[#FFBD39] text-6xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500">
           personal page!
         </h1>
         <h1 className="text-white text-lg md:text-xl">

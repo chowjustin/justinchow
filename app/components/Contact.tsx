@@ -4,22 +4,17 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="p-10 lg:p-24 min-w-[515px] mb-[50px] lg:mb-[30px]"
-    >
-      <div className=" flex justify-center">
+    <div id="contact" className="p-10 lg:p-24  mb-[50px] lg:mb-[30px]">
+      <div className=" flex justify-center " data-aos="fade-up">
         <h1
-          className="text-white text-5xl font-bold hidden lg:flex "
+          className="text-white text-5xl  font-bold hidden lg:flex "
           style={{ zIndex: 1 }}
-          data-aos="fade-up"
         >
           Contact me
         </h1>
         <h1
-          className="text-white text-[75px] lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute  hover:text-[#FFBD39] duration-500"
+          className="text-white text-[75px] max-md:text-5xl lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute hover:text-[#FFBD39] duration-500"
           style={{ zIndex: 0 }}
-          data-aos="fade-up"
         >
           Contact
         </h1>

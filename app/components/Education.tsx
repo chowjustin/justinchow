@@ -4,19 +4,17 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div id="education" className="p-10 lg:p-24 min-w-[515px]">
-      <div className=" flex justify-center ">
+    <div id="education" className="p-10 lg:p-24 ">
+      <div className=" flex justify-center " data-aos="fade-up">
         <h1
-          className="text-white text-5xl font-bold hidden lg:flex "
+          className="text-white text-5xl  font-bold hidden lg:flex "
           style={{ zIndex: 1 }}
-          data-aos="fade-up"
         >
           Education
         </h1>
         <h1
-          className="text-white text-[75px] lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute hover:text-[#FFBD39] duration-500"
+          className="text-white text-[75px] max-md:text-5xl lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute hover:text-[#FFBD39] duration-500"
           style={{ zIndex: 0 }}
-          data-aos="fade-up"
         >
           Education
         </h1>

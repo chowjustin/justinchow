@@ -20,16 +20,16 @@ const About = () => {
   }, []);
 
   return (
-    <div className="flex justify-center mx-auto min-w-[515px] mb-14">
+    <div className="flex justify-center mx-auto mb-14">
       <div className="lg:w-1/2">
         <div
           className="relative text-center lg:text-left"
           data-aos="fade-right"
         >
-          <h1 className="text-white text-5xl font-bold hidden lg:flex ">
+          <h1 className="text-white text-5xl font-bold hidden lg:flex z-10">
             About me
           </h1>
-          <h1 className="text-white text-[75px] lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute lg:top-[-10px] lg:left-0 z-10 hover:text-[#FFBD39] hover:top-2 duration-500">
+          <h1 className="text-white text-[75px] max-md:text-5xl max-md:mb-4 lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute lg:top-[-10px] lg:left-0  hover:text-[#FFBD39] hover:top-2 duration-500">
             About
           </h1>
           <h1 className="text-[#999999] text-xl px-10 lg:px-0 hover:text-white hover:text-opacity-90 duration-500">

@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="max-w-screen">
+    <main className="max-w-screen overflow-hidden">
       <Header />
       <HomeLayout />
       <About />
