@@ -19,7 +19,11 @@ const Education = () => {
           Education
         </h1>
       </div>
-      <div className="lg:flex lg:gap-10 lg:mx-10">
+      <div
+        className="lg:flex lg:gap-10 lg:mx-10"
+        data-aos="flip-up"
+        data-aos-duration="2000"
+      >
         <EducationBox
           year="2020-2023"
           major="Natural Science"
