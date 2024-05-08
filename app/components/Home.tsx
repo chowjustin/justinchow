@@ -35,7 +35,7 @@ const HomeLayout = ({}) => {
 
   return (
     <div
-      className="h-screen items-center flex mt-[120px] max-w-screen min-h-[900px] md:min-h-0"
+      className="h-screen items-center flex max-w-screen max-xl:mt-[74px] max-md:mt-[66px] mt-[90px]"
       data-aos="zoom-in"
       data-aos-duration="1000"
       id="home"
