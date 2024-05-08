@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="mask-icon" href="/favicon.ico" color="#000000" />
       </Head>
-      <main className="max-w-screen overflow-hidden">
+      <main className="max-w-screen overflow-x-hidden">
         <Header />
         <HomeLayout />
         <About />
