@@ -1,17 +1,33 @@
 "use client";
 
 import Link from "next/link";
-import ButtonText from "./ButtonText";
 import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
-import MobileButton from "./MobileButton";
 
 const Header = ({}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      let offset;
+      if (window.innerWidth < 768) {
+        offset = element.getBoundingClientRect().top + window.scrollY - 66;
+      } else if (window.innerWidth < 1280) {
+        offset = element.getBoundingClientRect().top + window.scrollY - 74;
+      } else {
+        offset = element.getBoundingClientRect().top + window.scrollY - 90;
+      }
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -39,28 +55,88 @@ const Header = ({}) => {
               <div className="absolute top-10 right-0 bg-white border border-gray-300 p-7 rounded shadow text-2xl ">
                 <ul>
                   <li />
-                  <MobileButton title="Home" id="#" />
+                  <button
+                    onClick={() => handleClick("home")}
+                    className="font-base text-black active:text-[#FFBD39] hover:font-semibold hover:text-[#FFBD39] focus:text-[#FFBD39] transition duration-500"
+                  >
+                    Home
+                  </button>
                   <li />
-                  <MobileButton title="About" id="#about" />
+                  <button
+                    onClick={() => handleClick("about")}
+                    className="font-base text-black active:text-[#FFBD39] hover:font-semibold hover:text-[#FFBD39] focus:text-[#FFBD39] transition duration-500"
+                  >
+                    About
+                  </button>
                   <li />
-                  <MobileButton title="Education" id="#education" />
+                  <button
+                    onClick={() => handleClick("education")}
+                    className="font-base text-black active:text-[#FFBD39] hover:font-semibold hover:text-[#FFBD39] focus:text-[#FFBD39] transition duration-500"
+                  >
+                    Education
+                  </button>
                   <li />
-                  <MobileButton title="Achievements" id="#achievements" />
+                  <button
+                    onClick={() => handleClick("achievements")}
+                    className="font-base text-black active:text-[#FFBD39] hover:font-semibold hover:text-[#FFBD39] focus:text-[#FFBD39] transition duration-500"
+                  >
+                    Achievements
+                  </button>
                   <li />
-                  <MobileButton title="Skills" id="#skills" />
+                  <button
+                    onClick={() => handleClick("skills")}
+                    className="font-base text-black active:text-[#FFBD39] hover:font-semibold hover:text-[#FFBD39] focus:text-[#FFBD39] transition duration-500"
+                  >
+                    Skills
+                  </button>
                   <li />
-                  <MobileButton title="Contact" id="#contact" />
+                  <button
+                    onClick={() => handleClick("contact")}
+                    className="font-base text-black active:text-[#FFBD39] hover:font-semibold hover:text-[#FFBD39] focus:text-[#FFBD39] transition duration-500"
+                  >
+                    Contact
+                  </button>
                 </ul>
               </div>
             )}
           </div>
           <div className="gap-6 xl:gap-12 hidden md:flex">
-            <ButtonText title="Home" id="#" />
-            <ButtonText title="About" id="#about" />
-            <ButtonText title="Education" id="#education" />
-            <ButtonText title="Achievements" id="#achievements" />
-            <ButtonText title="Skills" id="#skills" />
-            <ButtonText title="Contact" id="#contact" />
+            <button
+              className="text-md border-b-2 border-solid border-[black] border-opacity-0 font-medium text-white hover:border-[#FFBD39]  focus:text-[#FFBD39] focus:border-[#FFBD39] focus:duration-500 transition duration-500"
+              onClick={() => handleClick("home")}
+            >
+              Home
+            </button>
+            <button
+              className="text-md border-b-2 border-solid border-[black] border-opacity-0 font-medium text-white hover:border-[#FFBD39]  focus:text-[#FFBD39] focus:border-[#FFBD39] focus:duration-500 transition duration-500"
+              onClick={() => handleClick("about")}
+            >
+              About
+            </button>
+            <button
+              className="text-md border-b-2 border-solid border-[black] border-opacity-0 font-medium text-white hover:border-[#FFBD39]  focus:text-[#FFBD39] focus:border-[#FFBD39] focus:duration-500 transition duration-500"
+              onClick={() => handleClick("education")}
+            >
+              Education
+            </button>
+            <button
+              className="text-md border-b-2 border-solid border-[black] border-opacity-0 font-medium text-white hover:border-[#FFBD39]  focus:text-[#FFBD39] focus:border-[#FFBD39] focus:duration-500 transition duration-500"
+              onClick={() => handleClick("achievements")}
+            >
+              Achievements
+            </button>
+            <button
+              className="text-md border-b-2 border-solid border-[black] border-opacity-0 font-medium text-white hover:border-[#FFBD39]  focus:text-[#FFBD39] focus:border-[#FFBD39] focus:duration-500 transition duration-500"
+              onClick={() => handleClick("skills")}
+            >
+              Skills
+            </button>
+            <button
+              className="text-md border-b-2 border-solid border-[black] border-opacity-0 font-medium text-white hover:border-[#FFBD39]  focus:text-[#FFBD39] focus:border-[#FFBD39] focus:duration-500 transition duration-500"
+              onClick={() => handleClick("contact")}
+            >
+              Contact
+            </button>
           </div>
         </div>
       </div>

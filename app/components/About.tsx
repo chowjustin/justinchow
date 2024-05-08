@@ -2,15 +2,30 @@
 
 import Image from "next/image";
 
+import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function openPdfInNewTab() {
   window.open("/others/CVNEW.pdf", "_blank");
 }
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
   return (
     <div className="flex justify-center mx-auto min-w-[515px] mb-14">
       <div className="lg:w-1/2">
-        <div className="relative text-center lg:text-left">
+        <div
+          className="relative text-center lg:text-left"
+          data-aos="fade-right"
+        >
           <h1 className="text-white text-5xl font-bold hidden lg:flex ">
             About me
           </h1>
@@ -36,12 +51,13 @@ const About = () => {
           <button
             className="bg-[#FFBD39] mt-5 h-10 lg:h-14 px-5 py-2 lg:p-5 font-semibold tracking-wide text-sm rounded-full hover:text-white duration-300"
             onClick={openPdfInNewTab}
+            data-aos="fade-up"
           >
             DOWNLOAD CV
           </button>
         </div>
       </div>
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex" data-aos="fade-left">
         <Image src="/images/pics.png" width={400} height={400} alt="pics" />
       </div>
     </div>

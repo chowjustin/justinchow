@@ -3,7 +3,10 @@ import AchievementsBlock from "./AchievementsBlock";
 const Achievements = () => {
   return (
     <div className=" p-10 lg:px-24 min-w-[515px] lg:mx-10">
-      <h1 className="text-white text-[50px] lg:text-[75px] font-bold text-center lg:text-left hover:text-[#FFBD39] hover:text-[90px] duration-500">
+      <h1
+        className="text-white text-[50px] lg:text-[75px] font-bold text-center lg:text-left "
+        data-aos="fade-up"
+      >
         Achievements
       </h1>
       <br />

@@ -14,7 +14,7 @@ const AchievementsBlock = ({
   desc,
 }: AchievementsBlockProps) => {
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="flex items-center mt-12 justify-between">
         <h2 className="text-[#FFBD39] text-lg lg:text-2xl font-semibold flex items-center gap-2">
           {title}

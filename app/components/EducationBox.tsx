@@ -25,7 +25,10 @@ const EducationBox = ({
   link,
 }: EducationBoxProps) => {
   return (
-    <div className="mt-8 lg:mt-[150px] lg:w-1/2 hover:scale-105 duration-500">
+    <div
+      className="mt-8 lg:mt-[150px] lg:w-1/2 hover:scale-105 duration-500"
+      data-aos="flip-up"
+    >
       <div className="bg-[#FFFFFF1A] p-8 lg:py-8 lg:pl-8 rounded-xl flex justify-between">
         <div>
           <h1 className=" text-[#FFBD39] font-bold text-xl lg:text-2xl">
