@@ -1,16 +1,43 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
-import { useState } from "react";
 
-const Header = ({}) => {
+import React, { useState, useEffect } from "react";
+import clsx from "clsx";
+
+const Header: React.FC = () => {
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const handleScroll = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        setIsHidden(true);
+      } else {
+        // Scrolling up
+        setIsHidden(false);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lastScrollY]);
 
   const handleClick = (id: string) => {
     const element = document.getElementById(id);
@@ -31,7 +58,12 @@ const Header = ({}) => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 ">
+    <div
+      className={clsx("fixed w-full transition-transform z-50 duration-300", {
+        "-translate-y-full": isHidden,
+        "translate-y-0": !isHidden,
+      })}
+    >
       <div className="bg-black bg-opacity-85 px-5 py-2 md:px-7 md:py-3 xl:p-5 ">
         <div className="flex items-center justify-between max-md:max-w-screen max-w-[1320px] lg:w-10/12 lg:m-auto">
           <button onClick={() => handleClick("home")}>
