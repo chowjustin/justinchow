@@ -1,11 +1,11 @@
-import Header from "./components/Header";
-import HomeLayout from "./components/Home";
-import About from "./components/About";
-import Education from "./components/Education";
-import Achievements from "./components/Achievements";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Header from "@/app/containers/Header";
+import HomeLayout from "@/app/containers/Home";
+import About from "@/app/containers/About";
+import Education from "@/app/containers/Education";
+import Achievements from "@/app/containers/Achievements";
+import Skills from "@/app/containers/Skills";
+import Contact from "@/app/containers/Contact";
+import Footer from "@/app/containers/Footer";
 import Head from "next/head";
 
 export default function Home() {

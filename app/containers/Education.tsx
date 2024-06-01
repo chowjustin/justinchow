@@ -1,4 +1,4 @@
-import EducationBox from "./EducationBox";
+import EducationBox from "@/app/components/EducationBox";
 
 import React from "react";
 

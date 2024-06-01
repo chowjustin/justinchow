@@ -1,5 +1,3 @@
-import { BiCodeAlt } from "react-icons/bi";
-
 interface AchievementsBlockProps {
   title: string;
   date: string;

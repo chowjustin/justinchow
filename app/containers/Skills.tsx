@@ -13,7 +13,7 @@ import {
   SiTailwindcss,
   SiGit,
 } from "react-icons/si";
-import SkillsIcon from "./SkillsIcon";
+import SkillsIcon from "@/app/components/SkillsIcon";
 
 const Skills = () => {
   return (

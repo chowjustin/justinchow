@@ -1,4 +1,4 @@
-import AchievementsBlock from "./AchievementsBlock";
+import AchievementsBlock from "@/app/components/AchievementsBlock";
 
 const Achievements = () => {
   return (
