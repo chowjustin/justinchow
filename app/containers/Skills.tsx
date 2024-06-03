@@ -27,7 +27,7 @@ const Skills = () => {
         </h1>
       </div>
       <div className="lg:min-w-[515px] px-6">
-        <div className="flex justify-center gap-3 md:gap-7 mt-75 lg:mt-[150px] lg:mb-[50px]">
+        <div className="flex justify-center w-full md:w-3/4 xl:w-1/2 mx-auto gap-3 md:gap-7 mt-4 md:mt-[50px] lg:mt-[200px] ">
           <SkillsIcon title="Python" icon={<SiPython />} duration="1000" />
           <SkillsIcon title="C" icon={<SiCoursera />} duration="1250" />
           <SkillsIcon title="C++" icon={<SiCplusplus />} duration="1500" />
@@ -41,11 +41,9 @@ const Skills = () => {
             icon={<SiJavascript />}
             duration="2000"
           />
-          <SkillsIcon title="HTML" icon={<SiHtml5 />} duration="2250" />
-          <SkillsIcon title="CSS" icon={<SiCss3 />} duration="2500" />
-          <SkillsIcon title="PHP" icon={<SiPhp />} duration="2750" />
+          <SkillsIcon title="PHP" icon={<SiPhp />} duration="2250" />
         </div>
-        <div className="flex justify-center gap-3 md:gap-7 ">
+        <div className="flex justify-center w-full md:w-3/4 xl:w-1/2 mx-auto gap-3 md:gap-7 mt-12 md:mt-[100px]">
           <SkillsIcon title="MySQL" icon={<SiMysql />} duration="500" />
           <SkillsIcon title="ReactJs" icon={<SiReact />} duration="800" />
           <SkillsIcon title="NextJs" icon={<SiNextdotjs />} duration="1100" />
@@ -54,7 +52,8 @@ const Skills = () => {
             icon={<SiTailwindcss />}
             duration="1300"
           />
-          <SkillsIcon title="Git" icon={<SiGit />} duration="1500" />
+          <SkillsIcon title="HTML" icon={<SiHtml5 />} duration="1500" />
+          <SkillsIcon title="CSS" icon={<SiCss3 />} duration="1700" />
         </div>
       </div>
     </div>
