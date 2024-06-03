@@ -41,10 +41,10 @@ const HomeLayout = ({}) => {
       id="home"
     >
       <div className="m-auto max-md:px-4 p-24 text-center justify-center">
-        <h1 className="text-white text-5xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500">
+        <h1 className="text-white text-5xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500 flex">
           Hello, <br className="md:hidden" /> welcome
           <br className="md:hidden" />
-          to my
+          <p className="md:ml-4 max-md:hidden">to my</p>
         </h1>
         <h1 className="text-[#FFBD39] text-5xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500">
           personal <br className="md:hidden" /> page!
