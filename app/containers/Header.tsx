@@ -115,9 +115,7 @@ const Header: React.FC = () => {
                     section="Contact"
                     onClick={() => handleClick("contact")}
                   />
-                  <li>
-                    <DarkModeToggle />
-                  </li>
+                  <li>{/* <DarkModeToggle /> */}</li>
                 </ul>
               </div>
             )}
@@ -144,7 +142,7 @@ const Header: React.FC = () => {
               section="Contact"
               onClick={() => handleClick("contact")}
             />
-            <DarkModeToggle />
+            {/* <DarkModeToggle /> */}
           </div>
         </div>
       </div>
