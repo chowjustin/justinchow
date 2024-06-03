@@ -2,7 +2,7 @@ import AchievementsBlock from "@/app/components/AchievementsBlock";
 
 const Achievements = () => {
   return (
-    <div className="p-10 lg:px-24lg:mx-10">
+    <div className="p-10 lg:px-24 lg:mx-10">
       <h1
         className="text-white text-[50px] lg:text-[75px] max-md:text-4xl font-bold text-center lg:text-left "
         data-aos="fade-up"
