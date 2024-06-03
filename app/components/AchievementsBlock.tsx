@@ -13,7 +13,7 @@ const AchievementsBlock = ({
 }: AchievementsBlockProps) => {
   return (
     <div data-aos="fade-up">
-      <div className="flex items-center mt-12 justify-between">
+      <div className="flex items-center mt-12 max-md:mt-6 justify-between">
         <h2 className="text-[#FFBD39] text-lg lg:text-2xl font-semibold flex items-center gap-2">
           {title}
         </h2>
