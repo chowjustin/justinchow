@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#000000" />
       </Head>
-      <main className="max-w-screen overflow-x-hidden">
+      <main className="max-w-screen overflow-x-hidden bg-black">
         <Header />
         <HomeLayout />
         <About />
