@@ -22,10 +22,8 @@ const Header: React.FC = () => {
   const handleScroll = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        // Scrolling down
         setIsHidden(true);
       } else {
-        // Scrolling up
         setIsHidden(false);
       }
       setLastScrollY(window.scrollY);
@@ -73,7 +71,7 @@ const Header: React.FC = () => {
           <button onClick={() => handleClick("home")}>
             <div className="flex items-center gap-2">
               <Image
-                src="/images/jclogo.jpg"
+                src="/images/jcwhite.png"
                 height={50}
                 width={50}
                 alt="jc logo"
