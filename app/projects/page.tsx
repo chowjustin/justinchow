@@ -3,7 +3,7 @@ import ProjectsCard from "@/app/components/ProjectsCard";
 
 export default function Projects() {
   return (
-    <main>
+    <main className="bg-black dark:bg-white h-full pb-24">
       <Header />
       <section className="w-3/5 max-lg:w-3/4 mx-auto flex flex-col items-center gap-24 mb-24">
         <div className="flex max-md:flex-col items-center gap-24 max-lg:gap-12 max-lg:mt-36 mt-48">

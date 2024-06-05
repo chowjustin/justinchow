@@ -66,32 +66,40 @@ const Header: React.FC = () => {
         "translate-y-0": !isHidden,
       })}
     >
-      <div className="bg-black bg-opacity-85 px-5 py-2 md:px-7 md:py-3 xl:p-5 ">
+      <div className="dark:bg-white bg-black text-black-2 bg-opacity-85 px-5 py-2 md:px-7 md:py-3 xl:p-5 shadow-lg dark:shadow-sky-400 shadow-[#FFBD39]">
         <div className="flex items-center justify-between max-md:max-w-screen max-w-[1320px] lg:w-10/12 lg:m-auto">
           <button onClick={() => handleClick("home")}>
             <div className="flex items-center gap-2">
+              <Image
+                src="/images/jcblack.png"
+                height={50}
+                width={50}
+                alt="jc logo"
+                className="hidden dark:flex"
+              />
               <Image
                 src="/images/jcwhite.png"
                 height={50}
                 width={50}
                 alt="jc logo"
+                className="dark:hidden flex"
               />
-              <h1 className="md:hidden lg:flex text-white font-bold text-2xl">
+              <h1 className="md:hidden lg:flex dark:text-black font-bold text-2xl text-white">
                 JUSTINCHOW
               </h1>
             </div>
           </button>
 
           <div className="relative  md:hidden">
-            <button onClick={handleButtonClick} className="text-white text-3xl">
+            <button onClick={handleButtonClick} className="text-black text-3xl">
               <IoMenu />
             </button>
             {isMenuOpen && (
-              <div className="absolute top-10 right-0 bg-white border border-gray-300 p-7 rounded shadow text-2xl ">
+              <div className="absolute top-10 right-0 bg-black border border-gray-300 p-7 rounded shadow text-2xl ">
                 <ul>
                   <HeaderMobileButton
                     section="Home"
-                    onClick={() => handleClick("home")}
+                    onClick={() => handleClick("#home")}
                   />
                   <HeaderMobileButton
                     section="About"
@@ -113,7 +121,9 @@ const Header: React.FC = () => {
                     section="Contact"
                     onClick={() => handleClick("contact")}
                   />
-                  <li>{/* <DarkModeToggle /> */}</li>
+                  <li>
+                    <DarkModeToggle />
+                  </li>
                 </ul>
               </div>
             )}
@@ -140,7 +150,7 @@ const Header: React.FC = () => {
               section="Contact"
               onClick={() => handleClick("contact")}
             />
-            {/* <DarkModeToggle /> */}
+            <DarkModeToggle />
           </div>
         </div>
       </div>
