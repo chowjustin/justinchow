@@ -13,6 +13,7 @@ import {
   SiTailwindcss,
   SiGit,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import SkillsIcon from "@/app/components/SkillsIcon";
 
 const Skills = () => {
@@ -42,6 +43,7 @@ const Skills = () => {
             duration="2000"
           />
           <SkillsIcon title="PHP" icon={<SiPhp />} duration="2250" />
+          <SkillsIcon title="Java" icon={<FaJava />} duration="2500" />
         </div>
         <div className="flex justify-center w-full md:w-3/4 xl:w-1/2 mx-auto gap-3 md:gap-7 mt-12 md:mt-[100px]">
           <SkillsIcon title="MySQL" icon={<SiMysql />} duration="500" />
