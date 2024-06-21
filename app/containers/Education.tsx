@@ -5,15 +5,12 @@ import React from "react";
 const Education = () => {
   return (
     <div id="education" className="p-10 lg:p-24 ">
-      <div className=" flex justify-center " data-aos="fade-up">
-        <h1
-          className="text-white text-5xl  font-bold hidden lg:flex "
-          style={{ zIndex: 1 }}
-        >
+      <div className=" flex justify-center group" data-aos="fade-up">
+        <h1 className="text-white text-5xl dark:text-gray-400 font-bold hidden lg:flex">
           Education
         </h1>
         <h1
-          className="text-white text-[75px] max-md:text-5xl lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute hover:text-[#FFBD39] duration-500"
+          className="text-white dark:text-gray-400 dark:lg:text-gray-100 text-[75px] dark:group-hover:text-[#38bdf8] max-md:text-5xl lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute group-hover:text-[#FFBD39] duration-500"
           style={{ zIndex: 0 }}
         >
           Education

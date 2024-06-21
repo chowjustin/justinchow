@@ -4,7 +4,7 @@ const Achievements = () => {
   return (
     <div className="p-10 lg:px-24 lg:mx-10">
       <h1
-        className="text-white text-[50px] lg:text-[75px] max-md:text-4xl font-bold text-center lg:text-left "
+        className="text-white dark:text-gray-400 text-[50px] lg:text-[75px] max-md:text-4xl font-bold max-lg:text-center"
         data-aos="fade-up"
       >
         Achievements

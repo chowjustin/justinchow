@@ -28,7 +28,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="p-2 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 duration-1000 rounded-lg"
+      className="p-2 bg-gray-200 max-md:text-2xl dark:max-md:bg-white dark:max-md:text-gray-900 max-md:bg-black max-md:text-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 md:duration-1000 rounded-lg"
     >
       {darkMode ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
     </button>

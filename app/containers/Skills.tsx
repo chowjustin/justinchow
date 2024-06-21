@@ -21,7 +21,7 @@ const Skills = () => {
     <div id="skills" className="p-10 lg:p-24 mb-[50px] lg:mb-[30px]">
       <div className=" flex justify-center">
         <h1
-          className="text-white text-[75px] max-md:mb-6 max-md:text-5xl lg:text-white lg:text-[80px] font-bold lg:absolute"
+          className="text-white dark:text-gray-400 text-[75px] max-md:mb-6 max-md:text-5xl lg:text-white lg:text-[80px] font-bold lg:absolute"
           data-aos="fade-up"
         >
           Skills
@@ -43,7 +43,6 @@ const Skills = () => {
             duration="2000"
           />
           <SkillsIcon title="PHP" icon={<SiPhp />} duration="2250" />
-          <SkillsIcon title="Java" icon={<FaJava />} duration="2500" />
         </div>
         <div className="flex justify-center w-full md:w-3/4 xl:w-1/2 mx-auto gap-3 md:gap-7 mt-12 md:mt-[100px]">
           <SkillsIcon title="MySQL" icon={<SiMysql />} duration="500" />

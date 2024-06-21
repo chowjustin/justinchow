@@ -35,27 +35,27 @@ const HomeLayout = ({}) => {
 
   return (
     <div
-      className="h-screen items-center flex max-w-screen max-xl:mt-[74px] max-md:mt-[66px] mt-[90px]"
+      className="h-screen items-center dark:bg-white flex max-w-screen max-xl:mt-[74px] max-md:mt-[66px] mt-[90px]"
       data-aos="zoom-in"
       data-aos-duration="1000"
       id="home"
     >
       <div className="m-auto max-md:px-4 p-24 text-center justify-center">
-        <h1 className="text-white text-5xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500 flex">
+        <h1 className="text-white   dark:text-gray-400 text-5xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500 flex">
           Hello, <br className="md:hidden" /> welcome
           <br className="md:hidden" />
           <p className="md:ml-4 max-md:hidden">to my</p>
         </h1>
-        <h1 className="text-[#FFBD39] text-5xl md:text-[60px] font-bold md:hover:tracking-[0.1em] duration-500">
+        <h1 className="text-[#FFBD39] text-5xl md:text-[60px] dark:text-[#38bdf8] font-bold md:hover:tracking-[0.1em] duration-500">
           personal <br className="md:hidden" /> page!
         </h1>
-        <h1 className="text-white text-md md:text-xl">
+        <h1 className="text-white text-md md:text-xl dark:text-gray-400">
           <br />
           <br />
           <i>Scroll down to find more!</i>
         </h1>
         <div
-          className="text-white flex mx-auto text-2xl md:text-3xl justify-center mt-5 animate-bounce"
+          className="text-white dark:text-gray-400 flex mx-auto text-2xl md:text-3xl justify-center mt-5 animate-bounce"
           onClick={handleClick}
         >
           <button>
