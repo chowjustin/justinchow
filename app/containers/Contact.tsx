@@ -13,7 +13,7 @@ const Contact = () => {
           Contact me
         </h1>
         <h1
-          className="text-white text-[75px] dark:text-gray-100 max-md:text-5xl lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute dark:group-hover:text-[#38bdf8] group-hover:text-[#FFBD39] duration-500"
+          className="text-white text-[75px] dark:text-gray-400 dark:lg:text-gray-100 max-md:text-5xl lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute dark:group-hover:text-[#38bdf8] group-hover:text-[#FFBD39] duration-500"
           style={{ zIndex: 0 }}
         >
           Contact

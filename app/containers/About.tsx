@@ -29,7 +29,7 @@ const About = () => {
           <h1 className="text-white relative dark:text-gray-400 text-5xl font-bold hidden lg:flex z-10">
             About me
           </h1>
-          <h1 className="text-white dark:text-gray-100 dark:hover:text-[#38bdf8] text-[75px] max-md:text-5xl max-md:mb-4 lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute lg:top-[-10px] lg:left-0  hover:text-[#FFBD39] hover:top-2 duration-500">
+          <h1 className="text-white dark:text-gray-400 dark:lg:text-gray-100 dark:hover:text-[#38bdf8] text-[75px] max-md:text-5xl max-md:mb-4 lg:text-[#FFFFFF1A] lg:text-[100px] font-bold lg:absolute lg:top-[-10px] lg:left-0  hover:text-[#FFBD39] hover:top-2 duration-500">
             About
           </h1>
           <h1 className="text-[#999999] text-xl px-10 lg:px-0 hover:text-white dark:hover:text-black hover:text-opacity-90 duration-500">
