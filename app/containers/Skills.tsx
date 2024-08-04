@@ -27,7 +27,10 @@ const slugs = [
 
 export default function Skills() {
   return (
-    <div className="flex w-full justify-center space-y-20 max-md:space-y-4 mt-8">
+    <div
+      id="skills"
+      className="flex w-full justify-center space-y-20 max-md:space-y-4 mt-8"
+    >
       <h1
         className="text-white dark:text-gray-400 text-[75px] max-md:mb-6 max-md:text-5xl lg:text-white lg:text-[80px] font-bold absolute"
         data-aos="fade-up"
