@@ -6,7 +6,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { useState, useEffect } from "react";
 
 export default function DarkModeToggle() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const savedMode = localStorage.getItem("dark-mode");
