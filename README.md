@@ -9,7 +9,6 @@ Welcome to my personal landing page, a dynamic project that marks my first foray
 
 ## Visit site
 
-You can visit my site by clicking the link below:
-
+I recently just added the dark mode features to my website. Go and check it out here!
 [http://justinchow.site](http://justinchow.site)
 
